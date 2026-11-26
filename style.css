@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+header div h2 {
+  color: purple;
+}
+header div div {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  margin-top: 1%;
+  background-color: black;
+  gap: 20px;
+}
+main h1 {
+  color: white;
+  font-size: 40px;
+}
+main p {
+  color: white;
+}
+main div {
+  display: flex;
+  gap: 12px;
+}
+main div button {
+  padding: 8px 32px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+main div:f {
+  color: purple;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,60 @@
+$primary-color: purple;
+$secondary-color: black;
+$third-color: white;
+$br-one: green;
+$br-two: orange;
+$br-three: red;
+
+@mixin flex-center($dir){
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    div {
+        @include flex-center(column);
+        gap: 12px;
+        h2 {
+            color: $primary-color;
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 22px;
+        }
+    }
+}
+main {
+    @include flex-center(column);
+    padding: 10%;
+    margin-top: 1%;
+    background-color: $secondary-color;
+    gap: 20px;
+    h1 {
+        color: $third-color;
+        font-size: 40px;
+    }
+    p {
+        color: $third-color;
+    }
+    div {
+        display: flex;
+        gap: 12px;
+        button {
+            padding: 8px 32px;
+            font-size: 18px;
+            border-radius: 20px;
+        } {
+            color: $primary-color;
+        }
+    }
+}
