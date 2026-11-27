@@ -57,18 +57,16 @@ main div button:first-child {
   background-color: purple;
 }
 
-.first-section {
+.section {
   background-color: rgb(255, 222, 255);
 }
 
 .row-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 }
 .row-cards .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: white;
 }
 .row-cards .card h3 {
@@ -84,8 +82,10 @@ main div button:first-child {
 .row-cards .card span {
   font-size: 20px;
   color: purple;
+  font-weight: bold;
 }
 
-.second-section {
+.second {
   display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
