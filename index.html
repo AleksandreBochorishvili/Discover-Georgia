@@ -1,64 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ka">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>აღმოაჩინე საქართველო</title>
-</head>
-<body>
-    <header>
-        <div>
-            <h2><strong>მწვერვალი</strong></h2>
-            <div>
-                <p>ტურები</p>
-                <p>ჩვენ შესახებ</p>
-                <p>კონტაქტი</p>
-            </div>
-        </div>
+    <title>მოგზაური — აღმოაჩინე საქართველო</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#">მწვერვალი</a>
+      <nav>
+        <a href="#destinations">ტურები</a>
+        <a href="#about">ჩვენ შესახებ</a>
+        <a href="#contact">კონტაქტი</a>
+      </nav>
     </header>
-    <main>
-        <h1><strong>აღმოაჩინე საქართველო</strong></h1>
-        <p>მთები ზღვა და უძველესი ქალაქები</p>
-        <div>
-            <button>დაჯავშნა</button>
-            <button>ყველა ტური</button>
-        </div>
-    </main>
-    <section class="first section">
-        <div class="row-cards">
-            <div class="card">
-                <h3>ყაზბეგი</h3>
-                <p>გერგეტის სამება და ხედი მყინვარწვერზე.</p>
-                <span>120 ₾</span>
-            </div>
-            <div class="card">
-                <h3>ბათუმი</h3>
-                <p>ზღვა, ბოტანიკური ბაღი და საღამოს ბულვარი.</p>
-                <span>250 ₾</span>
-            </div>
-            <div class="card">
-                <h3>სვანეთი</h3>
-                <p>მესტიის ძველი კოშკები და ლამაზი მთის ტბები.</p>
-                <span>400 ₾</span>
-            </div>
-        </div>
-    </section>
-    <section class="second section">
-        <div class="column-cards">
-            <div>
-                <p>ჯავშანი დადასტურებულია</p>
-            </div>
-            <div>
-                <p>სვანეთის ტურზე დარჩა 2 ადგილი!</p>
-            </div>
-            <div>
-                <p>ყაზბეგის ტური გაუქმდა ამინდის გამო!</p>
-            </div>
-        </div>
-    </section>
-    <footer>
 
+    <main>
+      <section class="hero" id="about">
+        <div>
+          <h1>აღმოაჩინე საქართველო</h1>
+          <p>მთები, ზღვა და უძველესი ქალაქები</p>
+          <div>
+            <a class="button-primary" href="#destinations">დაჯავშნა</a>
+            <a class="button-light" href="#destinations">ყველა ტური</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="destinations" id="destinations">
+        <div>
+          <article>
+            <h2>ყაზბეგი</h2>
+            <p>გერგეტის სამება და ხედი მყინვარწვერზე.</p>
+            <p class="price">120 ₾</p>
+          </article>
+          <article>
+            <h2>ბათუმი</h2>
+            <p>ზღვა, ბოტანიკური ბაღი და საღამოს ბულვარი.</p>
+            <p class="price">250 ₾</p>
+          </article>
+          <article>
+            <h2>სვანეთი</h2>
+            <p>მესტიის ძველი კოშკები და ლამაზი მთის ხედები.</p>
+            <p class="price">400 ₾</p>
+          </article>
+        </div>
+
+        <div class="notices" id="contact">
+          <p class="notice-success">ჯავშანი დადასტურებულია!</p>
+          <p class="notice-warning">სვანეთის ტურზე დარჩა 2 ადგილით.</p>
+          <p class="notice-error">ყაზბეგის ტური გაუქმდა ამინდის გამო.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 მოგზაური</p>
     </footer>
-</body>
+  </body>
 </html>
