@@ -28,7 +28,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10%;
+  padding: 8%;
   margin-top: 1%;
   background-color: black;
   gap: 20px;
@@ -47,8 +47,45 @@ main div {
 main div button {
   padding: 8px 32px;
   font-size: 18px;
-  border-radius: 20px;
+  border-radius: 14px;
 }
-main div:f {
+main div button:hover {
+  opacity: 0.7;
+}
+main div button:first-child {
+  border: 1px solid purple;
+  background-color: purple;
+}
+
+.first-section {
+  background-color: rgb(255, 222, 255);
+}
+
+.row-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.row-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.row-cards .card h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.row-cards .card p {
+  text-align: center;
+  width: 230px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.row-cards .card span {
+  font-size: 20px;
   color: purple;
+}
+
+.second-section {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
